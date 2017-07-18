@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Remember me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+            <div class="icon">
+                <img src="logo.png" alt="user info logo">
+            </div>
+            <div class="page-title"><h2>Your profile goes here</h2></div>
+        </header>
+    <main class="container">
+        
+        <form class="user-info" id="userdetails">
+			<div class="input-row">
+                <label for="name">Name: </label>
+			    <input type="text" name="name" id="name" required>
+            </div>
+			<div class="input-row">
+                <label for="age">Age: </label>
+			    <input type="number" id="age" name="age" min="1" required></div>			
+			<div class="input-row">
+                <label for="email">Email: </label>
+			    <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-row">
+                <label for="pwd">Password: </label>
+			    <input type="password" name="pwd" id="pwd" required>
+            </div>
+            <div class="input-row">
+                <label for="pwd">Remember me: </label>
+			    <input type="checkbox" name="rem" id="rem">
+            </div>
+			<div class="input-row">
+                <label for="phone">Phone: </label>
+                <input type="text" pattern="[789][0-9]{9}" id="phone" name="phone" required>
+            </div>
+            <fieldset>
+                <legend>Location:</legend>
+                <div>
+                    <div class="input-row">
+                        <label>Latitude: </label>
+                        <input type="number" id="latitude" step="any">
+                    </div>
+                    <div class="input-row">
+                        <label>Longitude: </label>
+                        <input type="number" id="longitude" step="any">
+                    </div>
+                    <div class="input-row">
+                        <label for="addr">Address: </label>
+                        <textarea name="addr" id="addr" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+            </fieldset>
+            <input type="submit" id="submit">					
+		</form>
+    </main>
+    <footer>
+        <hr>
+        &copy; 2017 Nandan Chaudhary, All right reserved
+    </footer>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script async defer
+	    	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYtgYH0XvP9Y7M-Fys6ZXfLmrWGQ6WpKo&callback=initMap">
+	</script>
+</body>
+</html>
